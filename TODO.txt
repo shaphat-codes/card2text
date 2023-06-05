@@ -1,0 +1,6 @@
+1. fix error handling ---done
+2. merge react and django ---done
+3. deploy --- done
+4. add disclaimer for image type --done
+5. fix punctuation problem
+6. 
