@@ -55,7 +55,8 @@ def standard_image(image):
                         sex = sex_crop[121:164,220:390]
                         #cv2.imshow("sex", sex)
                         #cv2.imwrite("sex_final.jpg", sex)
-                        cv2.waitKey(0)
+                        
+                        
                         custom_config = r'-l eng --oem 3 --psm 6'
                         sex_text = pytesseract.image_to_string(sex,config=custom_config)
                         sex_text = sex_text.split("\n")[1][-1]
