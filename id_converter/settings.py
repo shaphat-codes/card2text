@@ -26,7 +26,7 @@ SECRET_KEY = 'z6m+sd!gyha7z4g67=(=@$n1bby9@1@mwb&1+x)6r5@cc1kquq'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://domainfindr.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://card2text.onrender.com']
 
 
 # Application definition
