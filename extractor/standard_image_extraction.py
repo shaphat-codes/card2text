@@ -30,7 +30,7 @@ def standard_image(image):
                         surname_crop = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2GRAY)
                         surname_crop = cv2.convertScaleAbs(surname_crop, alpha=1.4, beta=7)
                         surname = surname_crop[18:65,10:400]
-                        cv2.waitKey(0)
+                        
                         custom_config = r'-l eng --oem 3 --psm 6'
                         surname_text = pytesseract.image_to_string(surname,config=custom_config)
                         surname_text = surname_text.split("\n")[1]
