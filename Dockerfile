@@ -22,6 +22,7 @@ RUN pip install -r requirements.txt
 
 #copying the content of the backend application into our Docker container.
 COPY . /app/id_converter/
-
+CMD ["python", "manage.py", "collectstatic"]
 #the starting command for our container
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
